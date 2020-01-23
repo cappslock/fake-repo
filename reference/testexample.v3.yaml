@@ -2,9 +2,10 @@ openapi: 3.0.0
 info:
   title: testExample
   version: '3.0'
-  description: Yet another one
+  description: My other description
   contact:
     name: Sarah
+    email: hello@test.com
 servers:
   - url: 'http://localhost:3000'
 paths: {}
