@@ -1,4 +1,8 @@
-# fake-repo
+---
+title: Stoplight Flavored Markdown
+---
+
+# Stoplight Flavored Markdown (smd)
 
 ### The Two Laws
 

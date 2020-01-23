@@ -1,0 +1,10 @@
+openapi: 3.0.0
+info:
+  title: testExample
+  version: '1.0'
+  description: Hi I am a description
+servers:
+  - url: 'http://localhost:3000'
+paths: {}
+components:
+  schemas: {}

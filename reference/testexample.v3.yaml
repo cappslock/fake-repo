@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: testExample
+  version: '3.0'
+  description: Yet another one
+  contact:
+    name: Sarah
+servers:
+  - url: 'http://localhost:3000'
+paths: {}
+components:
+  schemas: {}
+  securitySchemes:
+    hereIsAKey:
+      name: API Key
+      type: apiKey
+      in: query

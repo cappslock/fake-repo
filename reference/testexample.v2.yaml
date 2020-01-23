@@ -1,0 +1,72 @@
+openapi: 3.0.0
+info:
+  title: testExample
+  version: '2.0'
+  description: It's a description
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /users:
+    get:
+      summary: get all users
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  address:
+                    type: string
+                  occupation:
+                    type: string
+          headers:
+            header-0:
+              schema:
+                type: string
+            header-1:
+              schema:
+                type: string
+            header-2:
+              schema:
+                type: string
+            header-3:
+              schema:
+                type: string
+            header-4:
+              schema:
+                type: string
+        '301':
+          description: Moved Permanently
+        '404':
+          description: Not Found
+      operationId: get-users
+      description: This is a different description
+      security:
+        - API Key - 1: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: testHeader
+          description: ''
+        - schema:
+            type: string
+          in: query
+          name: testQuery
+      requestBody:
+        description: ''
+components:
+  schemas: {}
+  securitySchemes:
+    API Key - 1:
+      name: API Key
+      type: apiKey
+      in: query
+    API Key - 2:
+      type: http
+      scheme: basic
