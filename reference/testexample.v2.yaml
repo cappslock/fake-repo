@@ -49,18 +49,7 @@ paths:
           description: Not Found
       operationId: get-users
       description: This is a different description
-      security:
-        - API Key - 1: []
-      parameters:
-        - schema:
-            type: string
-          in: header
-          name: testHeader
-          description: ''
-        - schema:
-            type: string
-          in: query
-          name: testQuery
+      parameters: []
       requestBody:
         description: ''
 components:

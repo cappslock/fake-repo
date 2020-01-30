@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  title: vincenzo-recreate
+  version: '1.0'
+servers:
+  - url: 'https://petstore.swagger.io'
+paths:
+  '/pet/{petId}':
+    parameters:
+      - schema:
+          type: number
+        name: petId
+        in: path
+        required: true
+    get:
+      summary: get all pets
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  status:
+                    type: string
+      operationId: get-pet-petId
+    post:
+      summary: add a pet
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  status:
+                    type: string
+      operationId: post-pet-petId
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                status:
+                  type: string
+            examples:
+              test:
+                value:
+                  name: Sam
+                  status: available
+        description: ''
+components:
+  schemas: {}

@@ -8,6 +8,13 @@ info:
     email: hello@test.com
 servers:
   - url: 'http://localhost:3000'
-paths: {}
+paths:
+  /users:
+    get:
+      summary: get all users
+      tags: []
+      responses: {}
+      operationId: get-users
+      description: Description
 components:
   schemas: {}
