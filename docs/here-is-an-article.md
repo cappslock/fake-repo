@@ -1,4 +1,3 @@
-# myArticle
+# here is an article
 
 The beginning of an awesome article...
-I ave a lot to say
