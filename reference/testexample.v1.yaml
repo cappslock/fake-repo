@@ -16,5 +16,17 @@ paths:
       responses: {}
       operationId: get-users
       description: Description
+    head:
+      summary: headOperation
+      operationId: head-users
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: delete all users
+      operationId: delete-users
+      responses:
+        '200':
+          description: OK
 components:
   schemas: {}
