@@ -1,0 +1,40 @@
+openapi: 3.0.0
+info:
+  title: Users
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  '/users/{userID}':
+    parameters:
+      - schema:
+          type: string
+          pattern: '^[0-9]{3}$'
+        name: userID
+        in: path
+        required: true
+    get:
+      summary: Retrieve a user
+      tags:
+        - Users
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+      operationId: get-users-userID
+    head:
+      summary: headOperation
+      operationId: head-users-userID
+      responses:
+        '200':
+          description: OK
+components:
+  schemas: {}
