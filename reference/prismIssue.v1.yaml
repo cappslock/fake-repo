@@ -30,6 +30,11 @@ paths:
                     id:
                       type: string
       operationId: get-users-userID
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: Here is a header
     head:
       summary: headOperation
       operationId: head-users-userID
