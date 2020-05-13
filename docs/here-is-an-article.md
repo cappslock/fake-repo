@@ -1,8 +1,6 @@
-# here is an article for fakeRepo on the master branch
+# master branch article info 
 
 The beginning of an awesome article...
-
-ok we are doing this again on the master branch
 
 # fake-repo
 
