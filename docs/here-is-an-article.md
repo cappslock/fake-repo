@@ -2,7 +2,7 @@
 
 The beginning of an awesome article...
 
-ok we are going through this process one more time for the master branch!! 
+OK HERE WE GO 
 
 # fake-repo
 
