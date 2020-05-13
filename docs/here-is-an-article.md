@@ -1,8 +1,6 @@
-# here is an article for fakeRepo on the test-branch branch 
+# and for the test branch!!!
 
 The beginning of an awesome article...
-
-ok and more changes now on the test-branch
 
 # fake-repo
 
