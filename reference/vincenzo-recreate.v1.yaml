@@ -29,89 +29,9 @@ paths:
                     type: string
       operationId: get-pet-petId
       description: |-
-        <table cellspacing="0" border="0">
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorCode</font></b></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorMessage</font></b></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">Comment</font></b></td>
-            </tr>
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Empty_Authorization</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Authorization token is not filled</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">No value provided in the mandatory X-IDMS-Authorization header parameter.</font></td>
-            </tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Empty_BusinessUnit</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Business Unit is not Filled</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">No value provided in the mandatory businessUnit path parameter.</font></td>
-            </tr>
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Invalid_BusinessUnit</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Business Unit code does not exist in MySE</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">The requested Business Unit value does not exist in MySE.</font></td>
-            </tr>
-            <tr>
-            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Invalid_Language</font></td>
-            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Invalid language</font></td>
-            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Language does not exist for the given Business unit</font></td>
-          </tr>
-        </table>
-
-        ### #2. Technical error code for http return code 403
-
-        Invalid authentication token or user not registered in mySE
-
-        <table cellspacing="0" border="0">
-
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorCode</font></b></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorMessage</font></b></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">Comment</font></b></td>
-            </tr>
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Invalid_Authorization</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Invalid authorization token</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Wrong token or invalid session on IDMS.</font></td>
-            </tr>
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Expired_Authorization</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Expired authorization token</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">The authorization token validity has expired, it must be renewed by the calling application</font></td>
-            </tr>
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Invalid_User</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">User with federateID XXX not found for Business unit YYY</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">User not recognized on MySE for the given Business Unit. FederatedID is the unique identifier for the user in MySE database (UIMS and IDMS identifier)</font></td>
-            </tr>
-        </table>
-
-        ### #3. Technical error code for http return code 500
-
-        Service unavailable or Unexpected error
-
-        <table cellspacing="0" border="0">
-
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorCode</font></b></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorMessage</font></b></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">comment</font></b></td>
-            </tr>
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Service_Unavailable</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Unable to connect to MySE</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Connection to MySE rejected or timeout.</font></td>
-            </tr>
-            <tr>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">NOK</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">An error has occured at &lt;date&gt;</font></td>
-                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Any other error or exception found. All technical errors are managed within this specific code.</font></td>
-            </tr>
-        </table>
-
-        # tables!
-
-        | stuff | things | whatever |
-        | ----- | ------ | -------- |
-        | wow   | whoa   | neat.    |
+        | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b |
+        | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+        | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b | a | b |
     post:
       summary: add a pet
       tags: []
