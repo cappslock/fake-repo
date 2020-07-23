@@ -109,9 +109,9 @@ paths:
 
         # tables!
 
-        stuff | things | whatever
-        -------------------------
-        wow   | whoa   | neat
+        | stuff | things | whatever |
+        | ----- | ------ | -------- |
+        | wow   | whoa   | neat.    |
     post:
       summary: add a pet
       tags: []
