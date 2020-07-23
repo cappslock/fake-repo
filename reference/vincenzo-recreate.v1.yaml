@@ -30,9 +30,6 @@ paths:
       operationId: get-pet-petId
       description: |-
         <table cellspacing="0" border="0">
-            <colgroup width="158"></colgroup>
-            <colgroup width="250"></colgroup>
-            <colgroup width="520"></colgroup>
             <tr>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorCode</font></b></td>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorMessage</font></b></td>
@@ -64,9 +61,7 @@ paths:
         Invalid authentication token or user not registered in mySE
 
         <table cellspacing="0" border="0">
-            <colgroup width="158"></colgroup>
-            <colgroup width="250"></colgroup>
-            <colgroup width="520"></colgroup>
+
             <tr>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorCode</font></b></td>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorMessage</font></b></td>
@@ -94,9 +89,7 @@ paths:
         Service unavailable or Unexpected error
 
         <table cellspacing="0" border="0">
-            <colgroup width="158"></colgroup>
-            <colgroup width="250"></colgroup>
-            <colgroup width="520"></colgroup>
+
             <tr>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorCode</font></b></td>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#EAD1DC"><b><font face="Arial" color="#000000">errorMessage</font></b></td>
@@ -113,6 +106,12 @@ paths:
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" bgcolor="#FFFFFF"><font face="Arial">Any other error or exception found. All technical errors are managed within this specific code.</font></td>
             </tr>
         </table>
+
+        # tables!
+
+        stuff | things | whatever
+        -------------------------
+        wow   | whoa   | neat
     post:
       summary: add a pet
       tags: []
